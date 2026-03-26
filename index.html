@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/a89c6afcae.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisyUI and tailwind CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -33,7 +38,78 @@
   </head>
   <body>
     <!-- header section -->
-    <header></header>
+    <header>
+      <!-- navbar -->
+      <div class="container mx-auto lg:px-24 px-8 my-8">
+        <div class="navbar bg-red-400 rounded-full px-10">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content z-[1] mt-3 p-2 shadow bg-base-100"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div
+              class="space-x-4 hidden lg:flex text-white text-lg font-medium"
+            >
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Shop</a>
+              <a href="">Contact</a>
+            </div>
+          </div>
+
+          <!-- logo -->
+          <div class="navbar-center hidden lg:flex">
+            <img src="images/logo.png" alt="" />
+            <h6 class="ml-4 text-2xl font-semibold text-white">Fruit Burst</h6>
+          </div>
+          <!-- search -->
+          <div class="navbar-end hidden lg:flex">
+            <label class="input rounded-full px-5 py-2">
+              <input type="search" required placeholder="Search" />
+              <svg
+                class="h-[1em] opacity-50"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </g>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- main section -->
     <main></main>
     <!-- footer section -->
