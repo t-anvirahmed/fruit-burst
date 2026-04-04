@@ -294,50 +294,54 @@
     <main>
       <!-- deal of the day section -->
       <section class="container mx-auto lg:px-24 px-3">
-        <div class="flex justify-between items-center">
+        <div class="lg:flex items-center justify-between">
           <!-- deal of the day heading -->
-          <div class="w-2/3">
-            <h4 class="text-5xl font-bold">Deal of the day</h4>
-            <p class="text-xl font-light mt-6">
+          <div class="lg:w-2/3">
+            <h4 class="text-xl lg:text-5xl font-bold text-center lg:text-left">
+              Deal of the day
+            </h4>
+            <p
+              class="text-sm lg:text-xl font-light text-center lg:text-left mt-3 w-4/5 mx-auto lg:mx-0"
+            >
               Contrary to popular belief, is not simply random text. It has
-              roots in a piece of classical <br />
-              Latin literature from 45 BC, making it over 2000 years old.
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
             </p>
           </div>
           <!-- deal of the day Countdown -->
           <div>
             <div
-              class="grid auto-cols-max grid-flow-col gap-8 text-center font-semibold"
+              class="grid auto-cols-max grid-flow-col justify-center gap-3 lg:gap-8 text-center font-bold lg:font-semibold mt-3 lg:mt-0"
             >
               <div class="flex flex-col">
-                <span class="countdown text-5xl">
+                <span class="countdown text-2xl lg:text-5xl">
                   <span style="--value: 15" aria-live="polite" aria-label="15"
                     >15</span
                   >
                 </span>
                 Days
               </div>
-              <p class="text-3xl">:</p>
+              <p class="text-xl lg:text-3xl">:</p>
               <div class="flex flex-col">
-                <span class="countdown text-5xl">
+                <span class="countdown text-2xl lg:text-5xl">
                   <span style="--value: 10" aria-live="polite" aria-label="10"
                     >10</span
                   >
                 </span>
                 Hours
               </div>
-              <p class="text-3xl">:</p>
+              <p class="text-xl lg:text-3xl">:</p>
               <div class="flex flex-col">
-                <span class="countdown text-5xl">
+                <span class="countdown text-2xl lg:text-5xl">
                   <span style="--value: 24" aria-live="polite" aria-label="24"
                     >24</span
                   >
                 </span>
                 Min
               </div>
-              <p class="text-3xl">:</p>
+              <p class="text-xl lg:text-3xl">:</p>
               <div class="flex flex-col">
-                <span class="countdown text-5xl">
+                <span class="countdown text-2xl lg:text-5xl">
                   <span style="--value: 59" aria-live="polite" aria-label="59"
                     >59</span
                   >
@@ -348,7 +352,7 @@
           </div>
         </div>
         <!-- deal of the day cards -->
-        <div class="mt-12 flex justify-between">
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-4 gap-6">
           <!-- card 1 -->
           <div class="card bg-base-100 shadow-sm items-center p-12">
             <figure class="px-12">
